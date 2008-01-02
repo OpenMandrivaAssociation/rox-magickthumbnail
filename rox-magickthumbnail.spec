@@ -12,6 +12,7 @@ Patch: rox-magickthumbnail-first-frame.patch
 License: GPL
 Group: Graphical desktop/Other
 Url: http://roxos.sunsite.dk/dev-contrib/guido/
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Requires: rox-lib >= 1.9.12
 Requires: rox >= 2.1.1
 Requires: ImageMagick
