@@ -1,0 +1,15 @@
+--- MagickThumbnail/magickthumb.py~	2004-03-04 22:43:01.000000000 +0100
++++ MagickThumbnail/magickthumb.py	2004-05-28 09:57:21.092632444 +0200
+@@ -54,10 +54,10 @@
+ 	
+ 	#cmd='convert -mattecolor %s -frame "%s"x"%s" -size "%s"x"%s" "%s" -resize "%s"x"%s" +profile "*" "%s"'  % (bcolor, bwidth, bwidth, rsize, rsize, inname, rsize, rsize, frfname)
+ 	if frameit:
+-		cmd='convert -flatten -mattecolor "%s" -frame %sx%s+%s+%s -size %sx%s %s -resize %sx%s +profile "*" %s'  % (bcolor, frame_width, frame_width, outer_bevel, inner_bevel, rsize, rsize, inname, rsize, rsize, frfname)
++		cmd='convert -flatten -mattecolor "%s" -frame %sx%s+%s+%s -size %sx%s %s[0] -resize %sx%s +profile "*" %s'  % (bcolor, frame_width, frame_width, outer_bevel, inner_bevel, rsize, rsize, inname, rsize, rsize, frfname)
+ 		#cmd='convert -mattecolor "#697B8F" -frame 6x6+2+4 -size %sx%s %s -resize %sx%s +profile "*" %s'  % (rsize, rsize, inname, rsize, rsize, frfname)
+ 	else:
+-		cmd='convert -flatten -size %sx%s %s -resize %sx%s +profile "*" %s'  % (rsize, rsize, inname, rsize, rsize, frfname)
++		cmd='convert -flatten -size %sx%s %s[0] -resize %sx%s +profile "*" %s'  % (rsize, rsize, inname, rsize, rsize, frfname)
+         cmd+=' > /dev/null 2>&1'
+ 	    
+ 	os.system(cmd)
