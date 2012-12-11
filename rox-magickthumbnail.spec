@@ -46,3 +46,41 @@ rm -rf $RPM_BUILD_ROOT
 %_prefix/lib/apps/%oname/*.py
 %_prefix/lib/apps/%oname/AppRun
 
+
+
+%changelog
+* Tue Sep 08 2009 Thierry Vignaud <tvignaud@mandriva.com> 0.5.1-7mdv2010.0
++ Revision: 433391
+- rebuild
+
+  + Oden Eriksson <oeriksson@mandriva.com>
+    - lowercase ImageMagick
+
+* Wed Jul 23 2008 Thierry Vignaud <tvignaud@mandriva.com> 0.5.1-6mdv2009.0
++ Revision: 242557
+- rebuild
+- kill re-definition of %%buildroot on Pixel's request
+
+  + Olivier Blin <oblin@mandriva.com>
+    - restore BuildRoot
+
+
+* Sat Jun 03 2006 Götz Waschk <waschk@mandriva.org> 0.5.1-4mdv2007.0
+- fix appdir
+- use mkrel
+
+* Thu Jun 02 2005 Götz Waschk <waschk@mandriva.org> 0.5.1-3mdk
+- Rebuild
+
+* Fri May 28 2004 Götz Waschk <waschk@linux-mandrake.com> 0.5.1-2mdk
+- only thumbnail the first frame (usefull for 1000 page pdfs)
+
+* Fri Mar 05 2004 Götz Waschk <waschk@linux-mandrake.com> 0.5.1-1mdk
+- new version
+
+* Thu Mar 04 2004 Götz Waschk <waschk@linux-mandrake.com> 0.5-2mdk
+- add missing icon
+
+* Thu Mar 04 2004 Götz Waschk <waschk@linux-mandrake.com> 0.5-1mdk
+- initial package
+
