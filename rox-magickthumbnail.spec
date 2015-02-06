@@ -1,7 +1,7 @@
 %define name rox-magickthumbnail
 %define oname MagickThumbnail
 %define version 0.5.1
-%define release %mkrel 7
+%define release 8
 
 Summary: Thumbnail image generator for the ROX desktop
 Name: %{name}
